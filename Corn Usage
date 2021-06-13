@@ -1,0 +1,30 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaaaaay2/Lib/main/New%20UI/Corn"))()
+local window = library:NewWindow("Test","Hub")
+
+local section1 = window:NewSection("Section 1")
+
+section1:Drop("Refreshable",workspace:GetChildren(),function(a)
+    print("Second Dropdown :",a)
+end):on(game.Players:GetPlayers())
+
+section1:Text("Text with icon",'http://www.roblox.com/asset/?id=6022668902')
+
+section1:Toggle("Toggle",false,function(a)
+    print("Toggle",a)
+end)
+section1:Button("Button",function()
+    print("HI")
+end)
+section1:Box("Textbox",function(a)
+    print("Textbox :",a)
+end)
+section1:Bind("Default Bind",Enum.KeyCode.A,false,function(a)
+    print(a)
+end)
+section1:Bind("Toggle GUI",Enum.KeyCode.P,true,function(a)
+    library:SetBind(a)
+    print("Set".. a ..  " as a gui keybind")
+end)
+section1:Slider("Slider",1,50,34,function(a) --- Min,Max,Default
+    print("Slider",a)
+end)
