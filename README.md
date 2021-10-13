@@ -1,3 +1,6 @@
+# [Bracket V3](BracketV3/BracketV3%20Lib.lua)
+
+```lua
 local Config = {
     WindowName = "Example Library",
 	Color = Color3.fromRGB(255,128,64),
@@ -138,3 +141,5 @@ local Slider4 = Section4:CreateSlider("Tile Scale",0,1,nil,false, function(Value
 	Window:SetTileScale(Value)
 end)
 Slider4:SetValue(0.5)
+
+```
