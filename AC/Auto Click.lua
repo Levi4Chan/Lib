@@ -23,7 +23,7 @@ if not pcall(function() return syn.protect_gui end) then
 end
 
 --// UI Library \\--
-local Library = loadstring(game:HttpGetAsync('https://pastebin.com/raw/edJT9EGX'))()
+local Library = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/Jaaaaay2/Lib/main/AC/Source.lua'))()
 local Window = Library:CreateWindow("AutoClicker by Ezpi")
 Enabled_1 = Window:AddColor({
     text = 'Status:',
