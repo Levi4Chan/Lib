@@ -146,7 +146,7 @@ Slider4:SetValue(0.5)
 
 # [IreXion](IreXion%20UI/Source.lua)
 
-```
+```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/IreXion-UI-Library/main/IreXion%20UI%20Library"))()
 
 local Gui = Library:AddGui({
