@@ -2507,7 +2507,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -72, 1, -8),
 				Theme = {BackgroundColor3 = {"Main", 10}}
-			}):round(5):tooltip("copy v3rm")
+			}):round(5):tooltip("copy youtube")
 			local youtube = youtubeContainer:object("ImageLabel", {
 				Image = "http://www.roblox.com/asset/?id=8607142923",
 				Size = UDim2.new(1, -4, 1, -4),
