@@ -72,7 +72,7 @@ local Library = {
 		},
 		Vaporwave = {},
 		OperaGX = {
-			Main = Color3.fromRGB(35, 30, 30),
+			Main = Color3.fromRGB(26, 21, 21),
 			Secondary = Color3.fromRGB(46, 41, 41),
 			Tertiary = Color3.fromRGB(193, 6, 6),
 
