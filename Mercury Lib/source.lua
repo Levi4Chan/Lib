@@ -1,3 +1,11 @@
+function RandomString()
+	local length = math.random(10,20)
+	local array = {}
+	for i = 1, length do
+		array[i] = string.char(math.random(32, 126))
+	end
+	return table.concat(array)
+end
 --[[
 
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
@@ -457,6 +465,7 @@ function Library:create(options)
 
 	local gui = self:object("ScreenGui", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
+		Name = RandomString(),
 		ZIndexBehavior = Enum.ZIndexBehavior.Global
 	})
 
