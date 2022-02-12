@@ -2794,6 +2794,25 @@ function Library:credit(options)
 				setclipboard(options.V3rmillion)
 			end)
 		end
+		
+		if options.Youtube then
+			local youtubeContainer = creditContainer:object("TextButton", {
+				AnchorPoint = Vector2.new(1, 1),
+				Size = UDim2.fromOffset(24, 24),
+				Position = UDim2.new(1, -77, 1, -8),
+				Theme = {BackgroundColor3 = {"Main", 10}}
+			}):round(5):tooltip("copy v3rm")
+			local youtube = youtubeContainer:object("ImageLabel", {
+				Image = "http://www.roblox.com/asset/?id=8607142923",
+				Size = UDim2.new(1, -4, 1, -4),
+				Centered = true,
+				BackgroundTransparency = 1
+			})
+
+			youtubeContainer.MouseButton1Click:connect(function()
+				setclipboard(options.Youtube)
+			end)
+		end
 	end
 
 
