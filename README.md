@@ -64,6 +64,13 @@ GUI:Prompt{
 	}
 }
 
+GUI:Notification{
+	Title = "Alert",
+	Text = "You shall bump the thread on V3rmillion!",
+	Duration = 3,
+	Callback = function() end
+}
+
 GUI:ColorPicker{
 	Style = Library.ColorPickerStyles.Legacy,
 	Callback = function(color) end
