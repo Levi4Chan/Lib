@@ -2,32 +2,37 @@
 
 ```lua
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
-
+```
+```lua
 local GUI = Mercury:Create{
     Name = "Mercury",
     Size = UDim2.fromOffset(600, 400),
     Theme = self.Themes.Dark,
     Link = "https://github.com/deeeity/mercury-lib"
 }
-
+```
+```lua
 local Tab = GUI:Tab{
 	Name = "New Tab",
 	Icon = "rbxassetid://8569322835"
 }
-
+```
+```lua
 Tab:Button{
 	Name = "Button",
 	Description = nil,
 	Callback = function() end
 }
-
+```
+```lua
 Tab:Toggle{
 	Name = "Toggle",
 	StartingState = false,
 	Description = nil,
 	Callback = function(state) end
 }
-
+```
+```lua
 Tab:Dropdown{
 	Name = "Dropdown",
 	StartingText = "Select...",
@@ -35,7 +40,8 @@ Tab:Dropdown{
 	Items = {},
 	Callback = function(item) return end
 }
-
+```
+```lua
 Tab:Slider{
 	Name = "Slider",
 	Default = 50,
@@ -43,13 +49,15 @@ Tab:Slider{
 	Max = 100,
 	Callback = function() end
 }
-
+```
+```lua
 Tab:Keybind{
 	Name = "Keybind",
 	Keybind = nil,
 	Description = nil
 }
-
+```
+```lua
 GUI:Prompt{
 	Followup = false,
 	Title = "Prompt",
@@ -63,19 +71,22 @@ GUI:Prompt{
 		end
 	}
 }
-
+```
+```lua
 GUI:Notification{
 	Title = "Alert",
 	Text = "You shall bump the thread on V3rmillion!",
 	Duration = 3,
 	Callback = function() end
 }
-
+```
+```lua
 GUI:ColorPicker{
 	Style = Library.ColorPickerStyles.Legacy,
 	Callback = function(color) end
 }
-
+```
+```lua
 GUI:Credit{
 	Name = "Creditor's name",
 	Description = "Helped with the script",
